@@ -205,8 +205,8 @@ Recap
 - Retrieved film by id |
 - Retrieved film by id |
 +++
-### Wizard Of Oz Pic
 ### Oh My!
+![Wizard Of Oz](assets/lions-tigers-bears.jpg)
 +++
 #### The Problem With RESTful APIs
 - Multiple endpoints often require multiple round trips to get data |
