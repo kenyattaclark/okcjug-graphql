@@ -5,6 +5,13 @@
 <span style="color:gray">An introduction to GraphQL. A query language for your API</span>
 
 ---
+About Me
+- Developer @ MBO Partners for 7 years
+- Work on the back end API team serving multiple clients
+- - Mobile
+- - Web
+- - Integration
+---
 ### Why GraphQL?
 +++
 ### Requirements
@@ -419,10 +426,10 @@ query Character($personId: String, $withFilms: Boolean!) {
 ### GraphQL And Java
 +++
 ### Tools
-- GraphQL Java
-- GraphQL Spring Boot
-- - Forked from oembedler 
-- GraphQL Common
-- - Not being maintained
-- - GraphQL Spring Boot dropped support - Supported version 3.1.1
-- Graph*i*QL
+* GraphQL Java
+* GraphQL Spring Boot
+** Forked from oembedler 
+** GraphQL Common
+** Not being maintained
+** GraphQL Spring Boot dropped support - Supported version 3.1.1
+* Graph*i*QL
