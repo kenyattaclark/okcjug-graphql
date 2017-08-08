@@ -8,9 +8,9 @@
 About Me
 * Developer @ MBO Partners for 7 years
 * Work on the back end API team serving multiple clients
-** Mobile
-** Web
-** Integration
+	* Mobile
+	* Web
+	* Integration
 ---
 ### Why GraphQL?
 +++
