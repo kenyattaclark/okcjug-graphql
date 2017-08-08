@@ -531,9 +531,7 @@ query Character($personId: String, $withFilms: Boolean!) {
 	* Not being maintained
 	* GraphQL Spring Boot dropped support - Supported version 3.1.1
 * Graph*i*QL
-+++
-### Schema
-?code=src/main/java/org/okcjug/graphql/schema/Schema.java
++++?code=src/main/java/org/okcjug/graphql/schema/Schema.java
 @[5-6](Schema declaration)
 @[8-9](Query / Root Object declaration)
 @[11-15](Mutation declaration)
