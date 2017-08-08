@@ -14,6 +14,8 @@ About Me
 ---
 ### Why GraphQL?
 +++
+![Corn Flower](assets/cornflower.jpg)
++++
 ### Requirements
 
 Build a UI to show information about a Star Wars character.  For example, Darth Vader, and all the films this character appeared in. This view should display the characters’s name, birth year, planet name, and the titles of all the films in which they appeared.
@@ -223,7 +225,7 @@ GraphQL Query
   person(id: "4") {
     name,
     birthYear,
-    planet {
+    homeWorld {
       name
     },
     films {
@@ -233,7 +235,36 @@ GraphQL Query
 }
 ```
 +++
-### TODO Show response
+Response
+```
+{
+  "data": {
+    "person": {
+      "name": "Darth Vader",
+      "birthYear": "41.9BBY",
+      "homeWorld": {
+        "name": "Tatooine"
+      },
+      "films": [
+        {
+          "title": "The Empire Strikes Back"
+        },
+        {
+          "title": "Revenge of the Sith"
+        },
+        {
+          "title": "Return of the Jedi"
+        },
+        {
+          "title": "A New Hope"
+        }
+      ]
+    }
+  }
+}
+```
++++
+This response looks like what we wanted right?
 +++
 ### Why GraphQL?
 - Multiple round trips required to fetch data
@@ -267,7 +298,7 @@ Traversal Query
 query {
 	person {
     name
-    filmConnection {
+    films {
       title
     }
   }
@@ -290,7 +321,6 @@ Multiple arguments
 +++
 ### Aliases
 +++
-Failing query
 ```
 query {
 	person(id: "1") {
@@ -304,7 +334,7 @@ query {
 }
 ```
 +++
-Working query with alias
+Query with alias
 ```
 query {
 	luke: person(id: "1") {
@@ -326,7 +356,7 @@ query {
 	leftComparison: person(id: "1") {
 		name
 		height
-		filmConnection {
+		films {
 			title
 			episodeId
 		}
@@ -334,7 +364,7 @@ query {
 	rightComparison: person(id: "2") {
 		name
 		height
-		filmConnection {
+		films {
 			title
 			episodeId
 		}	
@@ -356,7 +386,7 @@ query {
 fragment comparisonFields on Person {
 	name
 	height
-	filmConnection {
+	films {
 		title
 		episodeId
 	}	
@@ -371,7 +401,7 @@ query CharacterAndMovies($personId: String) {
 	person(id: $personId) {
 		name
 		height
-		filmConnection {
+		films {
 			title
 			episodeId
 		}
@@ -390,7 +420,7 @@ query CharacterAndMovies($personId: String = "2") {
 	person(id: $personId) {
 		name
 		height
-		filmConnection {
+		films {
 			title
 			episodeId
 		}
@@ -409,7 +439,7 @@ query Character($personId: String, $withFilms: Boolean!) {
 	person(id: $personId) {
 		name
 		height
-		filmConnection @include(if: $withFilms) {
+		films @include(if: $withFilms) {
 			title
 			episodeId
 		}
@@ -436,11 +466,13 @@ query Character($personId: String, $withFilms: Boolean!) {
 ---
 ### With Great Power...
 +++
-- Resource exhaustion
-- Authentication and authorization
-- Caching data
+### GraphQL Concerns
+- Resource exhaustion |
+- Authentication and authorization |
+- Caching data |
 ---
 Resources
+- http://graphql.org
 - https://github.com/graphql-java/graphql-java
 - https://github.com/graphql-java/graphql-spring-boot
 - https://github.com/oembedler/spring-graphql-common
@@ -451,5 +483,8 @@ Resources
 +++
 ### Questions?
 +++
-### Thanks!
+### Contact Me
+- kenyatta.clark@gmail.com
+- @kenyattaclark
 +++
+### Thanks!
