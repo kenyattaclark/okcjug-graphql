@@ -1,6 +1,6 @@
 ---
 
-### Lions and Tigers and GraphQL (Oh My!)
+# Lions and Tigers and GraphQL (Oh My!)
 
 <span style="color:gray">An introduction to GraphQL. A query language for your API</span>
 
@@ -237,8 +237,8 @@ GraphQL Query
 - A query language for your API |
 - A server-side runtime for executing queries by using a type system you define for your data |
 - Request are either: |
--- Queries
--- Mutations
+- - Queries
+- - Mutations
 - Not tied to a specific database or storage engine |
 - Backed by existing services / data |
 +++
@@ -415,3 +415,14 @@ query Character($personId: String, $withFilms: Boolean!) {
 	"withFilms": false
 }
 ```
+---
+### GraphQL And Java
++++
+### Tools
+- GraphQL Java
+- GraphQL Spring Boot
+- - Forked from oembedler 
+- GraphQL Common
+- - Not being maintained
+- - GraphQL Spring Boot dropped support - Supported version 3.1.1
+- Graph*i*QL
