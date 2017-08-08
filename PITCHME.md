@@ -34,6 +34,8 @@ Data wanted
 @[5-7](Planet resource)
 @[8-13](Film resource)
 +++
+### A RESTful Approach
++++
 Retrieving character
 ```
 GET - /people/{id}
@@ -111,6 +113,7 @@ GET - /planets/1
     "url": "https://swapi.co/api/planets/1/"
 }
 ```
+@[2](Planet information wanted)
 +++
 Retrieving film information
 ```
@@ -181,3 +184,4 @@ GET - /films/6
     "url": "https://swapi.co/api/films/1/"
 }
 ```
+@[2](Film information wanted)
