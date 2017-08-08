@@ -188,24 +188,29 @@ GET - /films/6
 +++
 Recap
 1. GET - /people/{id}
-1. GET - /planets/1
-1. GET - /films/1
-1. GET - /films/2
-1. GET - /films/3
-1. GET - /films/6
+1. GET - /planets/1 |
+1. GET - /films/1 |
+1. GET - /films/2 |
+1. GET - /films/3 |
+1. GET - /films/6 |
 +++
-### GraphQL Approach
+## The Problem With RESTful APIs
+- Multiple endpoints often require multiple round trips to get data |
+- There is no client request language to control the amount of data returned in responses |
+- Versioning can introduce more endpoints |
 +++
 Can we reduce the number of calls?
-Yes |
++++
+### GraphQL Approach
 +++
 ```
 GET or POST - /graphql?query={...}
 ```
 +++
+GraphQL Query
 ```
 {
-  person(ID: ...) {
+  person(id: "4") {
     name,
     birthYear,
     planet {
@@ -217,3 +222,13 @@ GET or POST - /graphql?query={...}
   }
 }
 ```
++++
+### TODO Show response
++++
+### Why GraphQL?
+- Multiple round trips required to fetch data
+- Decouples clients from server
+- Ask for what they need
++++
+---
+
