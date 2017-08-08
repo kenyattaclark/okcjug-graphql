@@ -542,12 +542,13 @@ query Character($personId: String, $withFilms: Boolean!) {
 - Paging |
 ---
 Who's Using GraphQL?
-![Facebook](assets/facebook.png | width=150)
+
 <img src="assets/facebook.png" title="Facebook" height="150">
-![Github](assets/github.png =150x150)
-![Pintrest](assets/pintrest.png =150x150)
-![Coursera](assets/coursera.png =150x150)
-![Shopify](assets/shopify.png =150x150)
+<img src="assets/github.png" title="Github" height="150">
+<img src="assets/pintrest.png" title="Pintrest" height="150">
+<img src="assets/intuit.png" title="Intuit" height="150">
+<img src="assets/coursera.png" title="Coursera" height="150">
+<img src="assets/shopify.png" title="Shopify" height="150">
 ---
 Resources
 - http://graphql.org
