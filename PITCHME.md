@@ -39,7 +39,7 @@ Retrieving character
 GET - /people/{id}
 ```
 +++
-The response may look like:
+Response
 ```
 {
   "name": "Darth Vader",
@@ -69,6 +69,7 @@ The response may look like:
   "url": "https://swapi.co/api/people/4/"
 }
 ```
+@[2,8](Person information wanted)
 +++
 Retrieving planet information
 ```
