@@ -309,7 +309,7 @@ This response looks like what we wanted right?
 ### What is GraphQL?
 - A query language for your API |
 - A server-side runtime for executing queries by using a type system you define for your data |
-- Request are either: |
+- Requests are either: |
 	- Queries |
 	- Mutations |
 - Not tied to a specific database or storage engine |
