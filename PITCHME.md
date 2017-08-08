@@ -28,13 +28,13 @@ Data wanted
 	]
   }
 }
-@[2-4]
-@[5-7]
-@[8-13]
 
 ```
+@[2-4](Person resource)
+@[5-7](Planet resource)
+@[8-13](Film resource)
 +++
-Assumming that we know the characters ID we might ask:
+Retrieving character
 ```
 GET - /people/{id}
 ```
@@ -70,7 +70,7 @@ The response may look like:
 }
 ```
 +++
-Retrieve planet information
+Retrieving planet information
 ```
 GET - /planets/1
 ```
@@ -111,7 +111,7 @@ GET - /planets/1
 }
 ```
 +++
-Finally, let's retrieve film information
+Retrieving film information
 ```
 GET - /films/1
 GET - /films/2
