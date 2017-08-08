@@ -273,6 +273,33 @@ Response
 ```
 +++
 This response looks like what we wanted right?
+```
+{
+  "data": {
+    "person": {
+      "name": "Darth Vader",
+      "birthYear": "41.9BBY",
+      "homeWorld": {
+        "name": "Tatooine"
+      },
+      "films": [
+        {
+          "title": "The Empire Strikes Back"
+        },
+        {
+          "title": "Revenge of the Sith"
+        },
+        {
+          "title": "Return of the Jedi"
+        },
+        {
+          "title": "A New Hope"
+        }
+      ]
+    }
+  }
+}
+```
 +++
 ### Why GraphQL?
 - Multiple round trips required to fetch data
@@ -468,6 +495,27 @@ query Character($personId: String, $withFilms: Boolean!) {
 	"withFilms": false
 }
 ```
++++
+### Schemas and Types
+- Root Object
+	- The jumping off point to get at data
+- Object Types and Fields
+	- think Java object
+	- think Java field / property
+- Scalar Types
+	- Int - signed 32 bit integer
+	- Float
+	- String
+	- Boolean
+	- ID
+		The ID scalar type represents a unique identifier, often used to refetch an object or as the key for a cache. The ID type is serialized in the same way as a String; however, defining it as an ID signifies that it is not intended to be human‐readable.
+	- Date - implementation specific
+- Other Types
+	- Lists
+	- Interfaces
+		- think Java interfaces
+	- Input Types
+		Complex types that can be passed as arguments
 ---
 ### GraphQL And Java
 +++
@@ -486,6 +534,7 @@ query Character($personId: String, $withFilms: Boolean!) {
 - Resource exhaustion |
 - Authentication and authorization |
 - Caching data |
+- Paging |
 ---
 Resources
 - http://graphql.org
