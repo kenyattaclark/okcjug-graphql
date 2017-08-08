@@ -533,6 +533,7 @@ query Character($personId: String, $withFilms: Boolean!) {
 * Graph*i*QL
 ---
 ### With Great Power...
+![Uncle Ben](assets/uncleben.jpg)
 +++
 ### GraphQL Concerns
 - Resource exhaustion |
