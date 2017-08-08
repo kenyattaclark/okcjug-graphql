@@ -1,6 +1,6 @@
 ---
 
-# Lions and Tigers and GraphQL (Oh My!)
+#### Lions and Tigers and GraphQL (Oh My!)
 
 ![GraphQL Logo](assets/graphql.png)
 
@@ -315,7 +315,7 @@ This response looks like what we wanted right?
 - Not tied to a specific database or storage engine |
 - Backed by existing services / data |
 +++
-### Queries and Mutations
+## Queries and Mutations
 +++
 ### Queries
 +++
@@ -340,7 +340,7 @@ query {
 }
 ```
 +++
-# Arguments
+### Arguments
 +++
 Single argument
 ```
@@ -391,7 +391,7 @@ query {
 }
 ```
 +++
-# Fragments
+### Fragments
 +++
 Verbose query
 ```
@@ -521,7 +521,7 @@ query Character($personId: String, $withFilms: Boolean!) {
 	- Input Types
 		Complex types that can be passed as arguments
 ---
-### GraphQL And Java
+## GraphQL And Java
 +++
 ### Tools
 * GraphQL Java
