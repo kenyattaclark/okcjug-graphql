@@ -320,6 +320,14 @@ query {
 ```
 +++
 Multiple arguments
+```
+query {
+	person(id: "20") {
+    name
+    height(unit: "FEET")
+  }
+}
+```
 +++
 ### Aliases
 +++
