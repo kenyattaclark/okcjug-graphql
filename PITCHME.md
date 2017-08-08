@@ -545,7 +545,7 @@ Who's Using GraphQL?
 
 <img src="assets/facebook.png" title="Facebook" height="150">
 <img src="assets/github.png" title="Github" height="150">
-<img src="assets/pintrest.png" title="Pintrest" height="150">
+<img src="assets/pinterest.png" title="Pinterest" height="150">
 <img src="assets/intuit.png" title="Intuit" height="150">
 <img src="assets/coursera.png" title="Coursera" height="150">
 <img src="assets/shopify.png" title="Shopify" height="150">
