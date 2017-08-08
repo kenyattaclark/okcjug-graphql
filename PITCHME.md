@@ -129,8 +129,14 @@ GET - /planets/1
 Retrieving film information
 ```
 GET - /films/1
+```
+```
 GET - /films/2
+```
+```
 GET - /films/3
+```
+```
 GET - /films/6
 ```
 +++
