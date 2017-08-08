@@ -1,7 +1,9 @@
 ---
 
 # Lions and Tigers and GraphQL (Oh My!)
-![GraphQL](assets/logo.svg)
+
+![GraphQL Logo](assets/graphql.png)
+
 <span style="color:gray">An introduction to GraphQL. A query language for your API</span>
 
 ---
