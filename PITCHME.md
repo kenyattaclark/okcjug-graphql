@@ -4,7 +4,7 @@
 
 ![GraphQL Logo](assets/graphql.png)
 
-<span style="color:gray">An introduction to GraphQL. A query language for your API</span>
+<span style="color:gray"><h4>An introduction to GraphQL. A query language for your API</h4></span>
 
 ---
 About Me
@@ -540,6 +540,13 @@ query Character($personId: String, $withFilms: Boolean!) {
 - Authentication and authorization |
 - Caching data |
 - Paging |
+---
+Who's Using GraphQL?
+![Facebook](assets/facebook.png)
+![Github](assets/github.png)
+![Pintrest](assets/pintrest.png)
+![Coursera](assets/coursera.png)
+![Shopify](assets/shopify.png)
 ---
 Resources
 - http://graphql.org
