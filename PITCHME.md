@@ -6,12 +6,12 @@
 
 ---
 ### Why GraphQL?
----
++++
 ### Requirements
 
 Build a UI to show information about a Star Wars character.  For example, Darth Vader, and all the films this character appeared in. This view should display the characters’s name, birth year, planet name, and the titles of all the films in which they appeared.
----
-### Sample Response
++++
+Data wanted
 ```
 {
 	"person": {
@@ -28,6 +28,10 @@ Build a UI to show information about a Star Wars character.  For example, Darth 
 	]
   }
 }
+@[2-4]
+@[5-7]
+@[8-13]
+
 ```
 +++
 Assumming that we know the characters ID we might ask:
