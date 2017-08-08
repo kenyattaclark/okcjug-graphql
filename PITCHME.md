@@ -244,8 +244,8 @@ GraphQL Query
 - A query language for your API |
 - A server-side runtime for executing queries by using a type system you define for your data |
 - Request are either: |
-- - Queries
-- - Mutations
+	- Queries |
+	- Mutations |
 - Not tied to a specific database or storage engine |
 - Backed by existing services / data |
 +++
@@ -428,8 +428,28 @@ query Character($personId: String, $withFilms: Boolean!) {
 ### Tools
 * GraphQL Java
 * GraphQL Spring Boot
-** Forked from oembedler 
-** GraphQL Common
-** Not being maintained
-** GraphQL Spring Boot dropped support - Supported version 3.1.1
+	* Forked from oembedler 
+* GraphQL Common
+	* Not being maintained
+	* GraphQL Spring Boot dropped support - Supported version 3.1.1
 * Graph*i*QL
+---
+### With Great Power...
++++
+- Resource exhaustion
+- Authentication and authorization
+- Caching data
+---
+Resources
+- https://github.com/graphql-java/graphql-java
+- https://github.com/graphql-java/graphql-spring-boot
+- https://github.com/oembedler/spring-graphql-common
+- https://github.com/kenyattaclark/okcjug-graphql
+- Star Wars API
+	- https://swapi.co/
+	- http://graphql.org/swapi-graphql/
++++
+### Questions?
++++
+### Thanks!
++++
