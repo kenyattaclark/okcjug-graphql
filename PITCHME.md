@@ -232,6 +232,186 @@ GraphQL Query
 - Multiple round trips required to fetch data
 - Decouples clients from server
 - Ask for what they need
-+++
 ---
+### What is GraphQL?
+- A query language for your API |
+- A server-side runtime for executing queries by using a type system you define for your data |
+- Request are either: |
+-- Queries
+-- Mutations
+- Not tied to a specific database or storage engine |
+- Backed by existing services / data |
++++
+### Queries and Mutations
++++
+### Queries
++++
+Simple Query
+```
+query {
+	person {
+    name
+  }
+}
+```
++++
+Traversal Query
+```
+query {
+	person {
+    name
+    filmConnection {
+      title
+    }
+  }
+}
+```
++++
+# Arguments
++++
+Single argument
+```
+query {
+	person(id: "20") {
+    name
+    height
+  }
+}
+```
++++
+Multiple arguments
++++
+### Aliases
++++
+Failing query
+```
+query {
+	person(id: "1") {
+		name
+		height
+	}
+	person(id: "2") {
+		name
+		height
+	}
+}
+```
++++
+Working query with alias
+```
+query {
+	luke: person(id: "1") {
+		name
+		height
+	}
+	c3p0: person(id: "2") {
+		name
+		height
+	}
+}
+```
++++
+# Fragments
++++
+Verbose query
+```
+query {
+	leftComparison: person(id: "1") {
+		name
+		height
+		filmConnection {
+			title
+			episodeId
+		}
+	}
+	rightComparison: person(id: "2") {
+		name
+		height
+		filmConnection {
+			title
+			episodeId
+		}	
+	}
+}
+```
++++
+Using fragments
+```
+query {
+	leftComparison: person(id: "1") {
+		...comparisonFields
+	}
+	rightComparison: person(id: "2") {
+		...comparisonFields
+	}
+}
 
+fragment comparisonFields on Person {
+	name
+	height
+	filmConnection {
+		title
+		episodeId
+	}	
+}
+```
++++
+### Variables
++++
+Dynamic query
+```
+query CharacterAndMovies($personId: String) {
+	person(id: $personId) {
+		name
+		height
+		filmConnection {
+			title
+			episodeId
+		}
+	}
+}
+
+{
+	# Variables block
+	"personId": "1"
+}
+```
++++
+Dynamic query with default
+```
+query CharacterAndMovies($personId: String = "2") {
+	person(id: $personId) {
+		name
+		height
+		filmConnection {
+			title
+			episodeId
+		}
+	}
+}
+
+{
+	# Empty variables block
+
+}
+```
++++
+Directives
+```
+query Character($personId: String, $withFilms: Boolean!) {
+	person(id: $personId) {
+		name
+		height
+		filmConnection @include(if: $withFilms) {
+			title
+			episodeId
+		}
+	}
+}
+
+{
+	# Variables block
+	"personId": "1"
+	"withFilms": false
+}
+```
