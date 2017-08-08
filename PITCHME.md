@@ -185,3 +185,35 @@ GET - /films/6
 }
 ```
 @[2](Film information wanted)
++++
+Recap
+1. GET - /people/{id}
+1. GET - /planets/1
+1. GET - /films/1
+1. GET - /films/2
+1. GET - /films/3
+1. GET - /films/6
++++
+### GraphQL Approach
++++
+Can we reduce the number of calls?
+Yes |
++++
+```
+GET or POST - /graphql?query={...}
+```
++++
+```
+{
+  person(ID: ...) {
+    name,
+    birthYear,
+    planet {
+      name
+    },
+    films {
+      title
+    }
+  }
+}
+```
