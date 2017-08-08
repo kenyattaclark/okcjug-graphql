@@ -187,14 +187,17 @@ GET - /films/6
 @[2](Film information wanted)
 +++
 Recap
-- ``` GET - /people/{id} ```
-- ``` GET - /planets/1 ``` |
-1. GET - /films/1 |
-1. GET - /films/2 |
-1. GET - /films/3 |
-1. GET - /films/6 |
+- Retrieved character by id |
+- Retrieved planet by id |
+- Retrieved film by id |
+- Retrieved film by id |
+- Retrieved film by id |
+- Retrieved film by id |
 +++
-## The Problem With RESTful APIs
+### Wizard Of Oz Pic
+### Oh My!
++++
+#### The Problem With RESTful APIs
 - Multiple endpoints often require multiple round trips to get data |
 - There is no client request language to control the amount of data returned in responses |
 - Versioning can introduce more endpoints |
