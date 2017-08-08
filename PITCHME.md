@@ -536,11 +536,11 @@ query Character($personId: String, $withFilms: Boolean!) {
 @[8-9](Query / Root Object declaration)
 @[11-15](Mutation declaration)
 +++
-+++?code=src/main/java/org/okcjug/graphql/schema/RootObjectType.java
+?code=src/main/java/org/okcjug/graphql/schema/RootObjectType.java
 @[20-21](Object declartion)
 @[23-35](Field declaration)
 +++
-+++?code=src/main/java/org/okcjug/graphql/schema/PersonObjectType.java
+?code=src/main/java/org/okcjug/graphql/schema/PersonObjectType.java
 @[25-26](Object declartion)
 @[28-47](Implicit field declaration)
 @[49-61](Field declaration with variable)
