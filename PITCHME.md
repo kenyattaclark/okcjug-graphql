@@ -502,6 +502,8 @@ query Character($personId: String, $withFilms: Boolean!) {
 - Object Types and Fields
 	- think Java object
 	- think Java field / property
+---
+### Schemas and Types
 - Scalar Types
 	- Int - signed 32 bit integer
 	- Float
@@ -510,6 +512,8 @@ query Character($personId: String, $withFilms: Boolean!) {
 	- ID
 		The ID scalar type represents a unique identifier, often used to refetch an object or as the key for a cache. The ID type is serialized in the same way as a String; however, defining it as an ID signifies that it is not intended to be human‐readable.
 	- Date - implementation specific
+---
+### Schemas and Types
 - Other Types
 	- Lists
 	- Interfaces
